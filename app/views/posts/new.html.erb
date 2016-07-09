@@ -1,0 +1,8 @@
+<h1>New Post</h1>
+
+<%= form_for @post do |p| %>
+	<h5>Enter your post:</h5><br>
+	<%= p.text_field :post %><br>
+	<br>
+	<%= p.submit %>
+<% end %>

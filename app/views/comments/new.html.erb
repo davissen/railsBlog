@@ -1,0 +1,10 @@
+<h1>New Comment</h1>
+
+<%= form_for @comment do |c| %>
+	<h5>Enter your post:</h5><br>
+	<%= c.text_field :comment %>
+	<%= c.hidden_field :post_id %>
+	<br>
+	<br>
+	<%= c.submit %>
+<% end %>
